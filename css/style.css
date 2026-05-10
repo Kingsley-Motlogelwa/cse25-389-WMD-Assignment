@@ -36,3 +36,61 @@ nav a:hover {
     max-width: 500px;
 }
 ``
+nav a {
+    position: relative;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav a.active {
+    color: red;
+}
+
+/* Animated line (underline effect) */
+nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: red;
+    animation: slide 1s infinite alternate;
+}
+
+/* Animation */
+@keyframes slide {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+nav a.active {
+    position: relative;
+    color: red;
+}
+
+nav a.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid red;
+    animation: borderMove 2s linear infinite;
+}
+
+@keyframes borderMove {
+    0% { border-color: red transparent transparent transparent; }
+    25% { border-color: transparent red transparent transparent; }
+    50% { border-color: transparent transparent red transparent; }
+    75% { border-color: transparent transparent transparent red; }
+    100% { border-color: red transparent transparent transparent; }
+}
