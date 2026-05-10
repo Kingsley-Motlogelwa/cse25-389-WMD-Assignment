@@ -1,4 +1,8 @@
 body {
+    background-color: red !important;
+}
+
+body {
     background-color: #f5f5f5;  /* light grey */
     font-family: Arial, sans-serif;
     margin: 0;
