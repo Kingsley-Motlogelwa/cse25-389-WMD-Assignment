@@ -106,3 +106,13 @@ nav a.active::before {
     75% { border-color: transparent transparent transparent red; }
     100% { border-color: red transparent transparent transparent; }
 }
+
+.hero {
+    height: 350px;
+    background: url('../images/banner.jpg') center/cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
