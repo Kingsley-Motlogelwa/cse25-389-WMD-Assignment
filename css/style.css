@@ -32,5 +32,7 @@ nav a:hover {
 .car img {
     display: block;
     margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
 }
 ``
