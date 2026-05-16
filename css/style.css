@@ -116,3 +116,36 @@ nav a.active::before {
     justify-content: center;
     align-items: center;
 }
+
+/* ============================= */
+/* ✅ BUTTON SECTION STYLE */
+/* ============================= */
+.buttons {
+    text-align: center;   /* Centers all buttons horizontally */
+    margin: 20px;         /* Adds space above and below the buttons section */
+}
+
+
+/* ============================= */
+/* ✅ INDIVIDUAL BUTTON STYLE */
+/* ============================= */
+button {
+    padding: 10px 20px;      /* Adds space inside the button (top/bottom, left/right) */
+    margin: 10px;            /* Adds space between each button */
+    
+    background-color: black; /* Sets the button background color */
+    color: white;            /* Sets the text color inside the button */
+    
+    border: none;            /* Removes the default border */
+    border-radius: 5px;      /* Slightly rounds the button corners */
+    
+    cursor: pointer;         /* Changes the mouse pointer to a hand (clickable effect) */
+}
+
+
+/* ============================= */
+/* ✅ HOVER EFFECT */
+/* ============================= */
+button:hover {
+    background-color: grey;  /* Changes color when user hovers over button */
+}
