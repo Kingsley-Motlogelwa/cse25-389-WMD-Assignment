@@ -174,23 +174,13 @@ footer {
 
 
 /* ============================= */
-/* ✅ ENGINE IMAGE SIZE (FIX) */
+/* ✅ ENGINE IMAGE SIZE (MATCH HOME PAGE) */
 /* ============================= */
-
-/* Engine container */
-.engine {
-    text-align: center;      /* center everything */
-    margin: 20px auto;
-}
-
-/* Engine images */
 .engine img {
-    width: 100%;             /* responsive */
-    max-width: 350px;        /* ✅ LIMIT SIZE (PROFESSIONAL) */
-    height: auto;            /* keep proportions */
-
     display: block;
-    margin: 10px auto;
-
-    border-radius: 5px;      /* smooth corners */
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;  /* ✅ SAME SIZE AS HOME PAGE */
+    height: auto;
 }
+``
