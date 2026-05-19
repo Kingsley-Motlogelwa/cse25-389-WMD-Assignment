@@ -121,31 +121,42 @@ nav a.active::before {
 /* ✅ BUTTON SECTION STYLE */
 /* ============================= */
 .buttons {
-    text-align: center;   /* Centers all buttons horizontally */
-    margin: 20px;         /* Adds space above and below the buttons section */
+    text-align: center;   /* Aligns all buttons to the center of the page horizontally */
+
+    margin: 20px;         /* Adds space around the button section (top, bottom, left, right) */
 }
+
 
 
 /* ============================= */
 /* ✅ INDIVIDUAL BUTTON STYLE */
 /* ============================= */
 button {
-    padding: 10px 20px;      /* Adds space inside the button (top/bottom, left/right) */
-    margin: 10px;            /* Adds space between each button */
-    
-    background-color: black; /* Sets the button background color */
-    color: white;            /* Sets the text color inside the button */
-    
-    border: none;            /* Removes the default border */
-    border-radius: 5px;      /* Slightly rounds the button corners */
-    
-    cursor: pointer;         /* Changes the mouse pointer to a hand (clickable effect) */
+    padding: 10px 20px;      /* Adds inner spacing:
+                                10px (top & bottom),
+                                20px (left & right) */
+
+    margin: 10px;            /* Adds space BETWEEN buttons so they are not touching */
+
+    background-color: black; /* Sets the background color of the button */
+
+    color: white;            /* Changes the text color inside the button */
+
+    border: none;            /* Removes the default browser border */
+
+    border-radius: 5px;      /* Rounds the corners slightly for a modern look */
+
+    cursor: pointer;         /* Changes mouse to a hand icon when hovering (indicates clickable) */
 }
 
 
+
 /* ============================= */
-/* ✅ HOVER EFFECT */
+/* ✅ HOVER EFFECT (recommended upgrade) */
 /* ============================= */
 button:hover {
-    background-color: grey;  /* Changes color when user hovers over button */
+    background-color: gray;  /* Changes button color when mouse hovers over it */
+
+    transition: 0.3s;        /* Smooth transition effect (makes hover look nicer) */
 }
+``
