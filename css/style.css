@@ -154,17 +154,20 @@ footer {
 /* ✅ SLIDESHOW */
 /* ============================= */
 .slideshow {
-    position: relative;
-    max-width: 600px;
-    margin: 30px auto;
+    position: relative;       /* Allows stacking of images */
+    max-width: 600px;         /* Controls slideshow width */
+    margin: 30px auto;        /* Centers it on the page */
+    overflow: hidden;         /* Prevents overflow issues */
+    border-radius: 5px;       /* Smooth corners */
 }
 
+/* All slides */
 .slide {
-    width: 100%;
-    display: none; /* hides all images */
+    width: 100%;              /* Makes image fill container */
+    display: none;            /* Hide all images by default */
 }
 
+/* Active slide (visible one) */
 .slide.active {
-    display: block; /* shows current image */
+    display: block;           /* Show only the active image */
 }
-``
