@@ -171,3 +171,26 @@ footer {
 .slide.active {
     display: block;           /* Show only the active image */
 }
+
+
+/* ============================= */
+/* ✅ ENGINE IMAGE SIZE (FIX) */
+/* ============================= */
+
+/* Engine container */
+.engine {
+    text-align: center;      /* center everything */
+    margin: 20px auto;
+}
+
+/* Engine images */
+.engine img {
+    width: 100%;             /* responsive */
+    max-width: 350px;        /* ✅ LIMIT SIZE (PROFESSIONAL) */
+    height: auto;            /* keep proportions */
+
+    display: block;
+    margin: 10px auto;
+
+    border-radius: 5px;      /* smooth corners */
+}
